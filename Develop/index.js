@@ -66,12 +66,11 @@ inquirer
   ])
 
   .then((response) => {
-    console.log({response});
-    filesystem.writeFile("README.md", JSON.stringify(exclamation + closer, null, '\t' ), (err) =>
-    err ? console.log(err) : console.log('success!')
-    );
-    return fs.writeFileSync(path.join (process.cwd(), "README.md"), generate(response));
-  });
+       console.log({response});
+       fs.writeFile("README.md", generate(response), (err) =>
+       err ? console.log(err) : console.log('success!')
+       );
+     });
 
   
 
@@ -81,46 +80,4 @@ inquirer
   //.then(() => console.log('succesfully wrote to index.html'))
   //.catch((err) => console.error(err));
 
-  //function generateMD(data){
-    //return`# ${data.title}
-    //${badge}
-    //${data.description}
-   // ## Table of contents:
-  //   * [Installation](#installation)
-  //   * [Usage](#usage)
-  //   * [License](#license)
-  //   [Contributing](#contributing)
-  //   * [Tests](#tests)
-  //   * [Questions](#questions)
-  //   ### Installation:
-  //   In order to install the necessary dependencies, open the console and run the following :
-  //   \`\`\`${data.installations}\`\`\`
-  //   ### Usage:
-  //   ${data.usage}
-  //   ### License:
-  //   This project is licensed under:
-  //   ${data.license}
-  //   ### Contributing:
-  //   ${data.contribute}
-  //   ### Tests:
-  //   In order tko test open the console and run the following:
-  //   \`\`\`${datat.tests}\`\`\`
-  //   ### Questions:
-  //   If you have questions contact me on [GitHub](https://github.com/${data.username}) or contact ${data.author} at ${data.email}`
-  // }
-
-
-  //.then((response) => {
-
-    // Use user feedback for... whatever!!
-//return fs.writeFileSync(path.join (process.cwd(), "README.md"), generate(response));
-//});
-
-// TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-
-
-// Function call to initialize app
-//init();
+  

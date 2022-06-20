@@ -1,6 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+function renderLicenseBadge(data) {
   const licenseType = data.license[0];
   let licenseString = " "
   if (licenseString === "MIT") {
@@ -65,6 +65,7 @@ function generateMarkdown(data) {
 
  ## E-mail
  ${data.email}
+ 
  `;
 }
 module.exports = generateMarkdown;
