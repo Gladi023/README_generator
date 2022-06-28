@@ -33,8 +33,8 @@ const promptUser = () => {
             type: "input",
             message: "How do you Install your application?",
             name: "install",
-            validate: installInput => {
-                if (installInput) {
+            validate: installation => {
+                if (installation) {
                   return true;
                 } else {
                   console.log('Please enter how to install application!');
@@ -92,7 +92,7 @@ const promptUser = () => {
                 }
               }
         },
-    ])
+    ])    
 }
 
 promptUser()

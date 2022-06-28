@@ -21,21 +21,18 @@ function licenseBadge(data) {
       return `# ${data.titleInput}
   ## Table of Contents:
     1. [Description](#description) 
-    2. [Installation](#Installation)
-    3. [Usage](#Usage)  
-    4. [Contributing](#Contributing)
-    5. [Tests](#Tests)
-    6. [License](#License)
-    7. [GitHub](#GitHub)
-    8. [E-mail](#E-mail)
+    2. [Installation](#installation)
+    3. [Usage](#usageInput)  
+    4. [Tests](#tests)
+    5. [License](#license)
+    6. [GitHub](#gitHubInput)
+    7. [E-mail](#email)
   ## Description
   ${data.description} 
   ## Installation
   ${data.installation}
   ## Usage
   ${data.usageInput}
-  ## Contributing
-  ${data.contributing}
   ## Tests
   ${data.tests}
   ## License
