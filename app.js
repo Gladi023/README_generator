@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const { writeFile, copyFile } = require('./utils/generate-site');
+const generateMarkdown = require("./utils/generate-site");
 
 const promptUser = () => {
     return inquirer.prompt([
