@@ -5,7 +5,7 @@ const promptUser = () => {
     return inquirer.prompt([
         {
             type: 'input',
-            name: 'title',
+            name: 'titleInput',
             message: 'What is the title of your project? (Required)',
             validate: titleInput => {
               if (titleInput) {
@@ -32,7 +32,7 @@ const promptUser = () => {
           {
             type: "input",
             message: "How do you Install your application?",
-            name: "install",
+            name: "installation",
             validate: installation => {
                 if (installation) {
                   return true;

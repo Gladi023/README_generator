@@ -8,7 +8,7 @@
    5. [Tests](#Tests)
    6. [License](#License)
    7. [GitHub](#GitHub)
-   8. [E-mail](#E-mail)
+
 
  ## Description
  A README.md generator that uses the Inquirer NPM, File System (FS), and Node.js to automatically create README markdown files. 
@@ -29,10 +29,7 @@
  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
  ## GitHub
- Gladi023 (https://github.com/Gladi023)
-
- ## E-mail
- gladimar.villamil@gmail.com
+https://github.com/Gladi023/README_generator
 
  ## Link to Video
  [Here is a link to the video](https://drive.google.com/file/d/1S4sZHQOqtw783bweJcPy-b41kgvOLz8e/view)
